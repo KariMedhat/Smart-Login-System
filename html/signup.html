@@ -1,0 +1,35 @@
+<html>
+    <head>
+     
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link href="../css/index_style.css" rel="stylesheet">
+        <title>Sign Up</title>
+
+    </head>
+    <body>
+      <div class="container my-5 text-center">
+          <div class="group w-75 m-auto p-5">
+            <h1>Smart Login System</h1>
+            <input type="text" placeholder="Enter Your Name" id="userNameInput" class="form-control my-3">
+            <p id="usernameAlert" class="d-none text-danger">Include at least 3 letters starting with capital, second name is optional</p>
+            <input type="text" placeholder="Enter Your Email" id="userEmailInput" class="form-control my-3">
+            <p id="userEmailAlert" class="d-none text-danger">name@example.com</p>
+            <input type="password" placeholder="Enter Your Password" id="userPasswordInput" class="form-control my-3">
+            <p id="userPasswordAlert" class="d-none text-danger m-0">You must strengthen your password, from 5 to 15 characters.</p>
+            
+            <p class="text-success d-none" id="confirmMsg">Success</p>
+            <p class="text-danger d-none mb-0" id="accountExistMsg">This account is exist ! Try another one.</p>
+            <p class="text-danger d-none mb-0" id="tryAgainMsg">signUp failed ! Try again</p>
+            <a id="signupBtn" onclick="signUp()" class="btn btn-outline-info w-100 mb-3 mt-4 text-decoration-none">Sign Up</a>
+            <p class="text-white d-block">Do you have an account? <a href="index.html" class="text-white">Sign In</a></p>
+            <a href="index.html" class="d-none btn btn-outline-success text-white w-25 m-auto" id="signIn">signin</a>
+          </div>
+      </div>  
+
+      <script src="../js/jquery-3.6.0.min.js"></script>
+      <script src="../js/popper.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/index.js"></script>
+    </body>
+</html>
+
